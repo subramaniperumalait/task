@@ -14,7 +14,7 @@ class AlterUserProfilesTable extends Migration
     public function up()
     {
         Schema::table('user_profiles', function (Blueprint $table) {
-              $table->enum('status', ['active', 'inactive'])->default('active'); // adding column only
+              $table->enum('status', ['active', 'inactive'])->default('active'); // adding column onlys
 
         });
     }
